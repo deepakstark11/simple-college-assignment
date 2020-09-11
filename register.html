@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        height: 70px;
+        background-color: whitesmoke;
+      }
+
+      h1 {
+        position: absolute;
+        padding: 3px;
+        float: left;
+        margin-left: 2%;
+        margin-top: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #000020;
+      }
+
+      span {
+        color: black;
+      }
+
+      ul {
+        width: auto;
+        float: right;
+        margin-top: 8px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 15px 30px;
+      }
+
+      a {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: black;
+      }
+
+      a:hover {
+        color: blue;
+        transition: 0.2s ease-in;
+      }
+
+      body {
+        background: url(img/register.jpg);
+
+        background-size: cover;
+      }
+
+      table {
+        color: whitesmoke;
+        background-color: rgb(8, 48, 80);
+        border-collapse: collapse;
+        font-size: 16px;
+        font-family: "Bree Serif", serif;
+        padding: 5px;
+        border: 5px solid white;
+        text-align: center;
+        margin-left: 820px;
+      }
+      h2 {
+        font-weight: bold;
+        text-shadow: gray;
+        font-size: 50px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+        margin-left: 920px;
+      }
+
+      #name {
+        width: 80%;
+        padding: 5px;
+        border-radius: 5%;
+        outline: 0;
+        border: 1px solid black;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Space<span>X</span></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="video.html">Videos</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="register.html">Booking</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Booking</h2>
+    <table cellpadding="10">
+      <tr>
+        <td>First Name :</td>
+        <td>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your first name"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Last Name :</td>
+        <td>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your last name"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Email :</td>
+        <td>
+          <input
+            type="email"
+            name="email"
+            id="name"
+            placeholder="Enter your email"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Password :</td>
+        <td>
+          <input
+            type="password"
+            name="password"
+            id="name"
+            placeholder="Enter your password"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Confirm Password :</td>
+        <td>
+          <input
+            type="password"
+            name="password"
+            id="name"
+            placeholder="Re-enter your password"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Date Of Birth :</td>
+        <td>
+          <input type="date" name="dob" id="name" />
+        </td>
+      </tr>
+      <tr>
+        <td>Mobile Number :</td>
+        <td>
+          <input type="number" name="Mnum" id="name" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Gender :</td>
+        <td>
+          <input type="radio" name="male" />
+          Male
+          <input type="radio" name="female" />
+          Female
+          <input type="radio" name="others" />
+          Others
+        </td>
+      </tr>
+      <tr>
+        <td>Address :</td>
+        <td>
+          <textarea
+            rows="6"
+            cols="25"
+            placeholder="Enter your address"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>State :</td>
+        <td>
+          <input
+            type="text"
+            name="state"
+            id="name"
+            placeholder="Enter your State"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>City :</td>
+        <td>
+          <input
+            type="text"
+            name="city"
+            id="name"
+            placeholder="Enter your City"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Country :</td>
+        <td>
+          <input
+            type="text"
+            name="country"
+            id="name"
+            placeholder="Enter your Country"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Pincode :</td>
+        <td>
+          <input type="number" name="pincode" id="name" />
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="tour">Choose a Tour :</label></td>
+        <td>
+          <select id="name" name="tour">
+            <option value="Mars">Mars</option>
+            <option value="Moon">Moon</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Planet-X">Planet-X</option>
+            <option value="Venus">Venus</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Payment Type :</td>
+        <td>
+          <input type="radio" name="cash" />
+          Cash
+          <input type="radio" name="card" />
+          Card
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+          <input
+            style="
+              background-color: whitesmoke;
+              color: #000000;
+              padding: 1em 1.5em;
+              text-decoration: none;
+              text-transform: uppercase;
+            "
+            type="submit"
+            value="Submit"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
